@@ -243,14 +243,27 @@ padding-left: 0;
     padding-bottom: 200px;
    
     background-color: var(--herofooter-bg-color);
+    
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../imegins/bg-main/bacgraund-Img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
+    
 
 /*Team*/
 .team-section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-background-color: var(--team-bg-secondhead) 
+padding-top: 94px;
+padding-bottom: 94px;
+background-color: var(--team-bg-secondhead); 
+
+margin-left: auto;
+margin-right: auto;
 }
 .footer{
     background-color: var(--herofooter-bg-color);
@@ -383,6 +396,59 @@ color: var(--web-link-color);
         .footer-item:last-child{
             margin-bottom: 0px;
         }
+
+        /* ===== === footer === ======= */
+
+    .container-footer {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+    .address{
+    margin-right: 70px;
+    }
+    .join-title{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    }
+    .wrapper-join{
+    display: flex;
+    list-style: none;}
+
+    .footer-social-item {
+    margin-right: 10px;
+    border-radius:50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-link-footer{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    }
+
+    .social-link-footer:hover,
+    .social-link-footer:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+    border-radius: 50%;
+    }
+
+
+
 
     /* team-section */
     .team {
@@ -594,3 +660,111 @@ color: var(--web-link-color);
     position: relative;
     overflow: hidden;    
     }
+
+/*================ Иконки ==========*/
+    .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    }
+
+    .social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;}
+
+    .social-icon {
+    fill: currentColor;
+    }
+
+    .social-link {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    }
+
+    .social-link:hover,
+    .social-link:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+    border-radius: 50%;}
+
+    .icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    }
+
+    .icon-smartphone {
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    }
+
+    .icon {
+    display: flex;
+    align-items: center;
+    }
+
+    /* ============= Постоянные клиенты */
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+
+    .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;}
+
+    .clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    color: var(--text-main-color);
+    text-align: center;
+    }
+
+    .clients {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .clients-item {
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    }
+
+    .clients-item:last-child {
+    margin-right: 0px;
+    }
+
+    .client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    }
+          
+    .client-link:hover, .client-link:focus {
+    border: 1px solid #2196f3;
+    fill: #2196f3;}
